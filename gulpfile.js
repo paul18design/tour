@@ -2,25 +2,28 @@ var gulp = require('gulp');
 var sass = require ('gulp-sass');
 var browserSync = require('browser-sync').create();
 
-gulp.task('serve', ['sass'], function() {
-    browserSync.init({
-        server: "./app"
-    });
-
-    gulp.watch("scss/**/*.scss", ['sass']);
-    gulp.watch("app/*.html").on('change', browserSync.reload);
-});
-
-gulp.task('sass', function(){
-    return gulp.src('scss/**/*.scss')
+// Compile scss into css
+function style() {
+    // 1. Where is my css file
+    return gulp.src('./scss/**/*.scss')
+        // 2. Pass that file through sass compiler
         .pipe(sass())
-        .pipe(gulp.dest('app/css'))
+        // 3. where do I save the compiled CSS?
+        .pipe(gulp.dest('./app/css'))
+        // 4. Stream changes to all browser
         .pipe(browserSync.stream());
-});
+}
 
+function watch() {
+    browserSync.init({
+        server: {
+            baseDir: './app'
+        }
+    });
+    gulp.watch('./scss/**/*.scss', style);
+    gulp.watch('./app/**/*.html').on('change', browserSync.reload);
+    gulp.watch('./js/**/*.js').on('change', browserSync.reload);
+}
 
-gulp.task('watch', function(){
-    gulp.watch('scss/**/*.scss', ['sass']);
-});
-
-
+exports.style = style;
+exports.watch = watch;
