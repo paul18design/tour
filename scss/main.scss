@@ -1,0 +1,9 @@
+$fondo-oscuro: #ff5566;
+
+body {
+  background-color: $fondo-oscuro;
+
+    & p {
+      margin: 0 auto;
+    }
+}
