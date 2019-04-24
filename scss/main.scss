@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'aganregular';
   src: url('../fonts/agane_roman-webfont.woff2') format('woff2'),
-  url('agane_roman-webfont.woff') format('woff');
+  url('../fonts/agane_roman-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: 'aganlight';
-  src: url('aganelight-webfont.woff2') format('woff2'),
-  url('aganelight-webfont.woff') format('woff');
+  src: url('../fonts/aganelight-webfont.woff2') format('woff2'),
+  url('../fonts/aganelight-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'aganextra_bold';
-  src: url('agane_extra_bold-webfont.woff2') format('woff2'),
+  src: url('../fonts/agane_extra_bold-webfont.woff2') format('woff2'),
   url('agane_extra_bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
@@ -27,8 +27,8 @@
 
 @font-face {
   font-family: 'aganbold';
-  src: url('agane_bold-webfont.woff2') format('woff2'),
-  url('agane_bold-webfont.woff') format('woff');
+  src: url('../fonts/agane_bold-webfont.woff2') format('woff2'),
+  url('../fonts/agane_bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -52,13 +52,50 @@ body {
   background-color: #706F6F;
 }
 
+.agane-light {
+  font-family: 'aganlight' !important;
+}
+
+.agane-regular {
+  font-family: 'aganregular' !important;
+}
+
+.agane-bold {
+  font-family: 'aganbold' !important;
+}
+
+.agane-extra {
+  font-family: 'aganextra_bold' !important;
+}
+
 .white-color {
   color: #ffffff !important;
 }
 .dark-color{
-  color: #000000;
+  color: #878787;
 }
 
+.fs_30{
+  font-size: 30px !important;
+}
+.fs_28{
+  font-size: 28px !important;
+}
+.fs_26{
+  font-size: 26px !important;
+}
+.fs_24{
+  font-size: 24px !important;
+}
+.fs_22{
+  font-size: 22px !important;
+}
+.fs_20{
+  font-size: 20px !important;
+}
+.fs_18{
+  font-size: 18px !important;
+}
 .fs_16{
   font-size: 16px !important;
 }
@@ -77,4 +114,26 @@ body {
 }
 .upper {
   text-transform: uppercase;
+}
+
+//Nav bar settings
+
+.nav-site .nav-item a {
+  padding-top: 20px;
+}
+
+.navbar-toggler-icon {
+  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://w…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E);
+}
+
+//Iconography
+.logo-tour {
+  background-image: url("../images/logo.jpg");
+  width: 100px;
+  height: 71px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  vertical-align: middle;
 }
