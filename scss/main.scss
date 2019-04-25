@@ -123,10 +123,18 @@ body {
 }
 
 .navbar-toggler-icon {
-  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://w…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E);
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://w…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+//Footer
+.footer-list {
+  list-style: none;
+  color: #ffffff;
+}
+
+
 //Iconography
+
 .logo-tour {
   background-image: url("../images/logo.jpg");
   width: 100px;

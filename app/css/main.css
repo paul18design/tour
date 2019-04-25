@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'aganregular';
   src: url("../fonts/agane_roman-webfont.woff2") format("woff2"), url("../fonts/agane_roman-webfont.woff") format("woff");
@@ -94,6 +95,13 @@ body {
 
 .nav-site .nav-item a {
   padding-top: 20px; }
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://w…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+
+.footer-list {
+  list-style: none;
+  color: #ffffff; }
 
 .logo-tour {
   background-image: url("../images/logo.jpg");
