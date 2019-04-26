@@ -93,15 +93,38 @@ body {
 .upper {
   text-transform: uppercase; }
 
+.header-list li:last-child {
+  width: 110px; }
+
 .nav-site .nav-item a {
-  padding-top: 20px; }
+  vertical-align: middle;
+  padding-top: 20px;
+  position: relative;
+  display: inline-block; }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://w…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
+.header-list li {
+  display: inline-block; }
+
 .footer-list {
   list-style: none;
   color: #ffffff; }
+
+ul.footer-list li:first-child {
+  display: block;
+  vertical-align: middle; }
+
+ul.footer-list li span {
+  vertical-align: middle; }
+
+ul.footer-list {
+  padding: 0 !important; }
+
+@media (min-width: 768px) {
+  .footer-col {
+    text-align: left; } }
 
 .logo-tour {
   background-image: url("../images/logo.jpg");
@@ -112,3 +135,75 @@ body {
   background-position: center center;
   background-size: 100%;
   vertical-align: middle; }
+
+.icon-phone {
+  background-image: url("../images/svg/icon-phone_white.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+  width: 28px;
+  height: 28px;
+  display: inline-block; }
+
+.icon-mail {
+  background-image: url("../images/svg/icon-mail_white.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+  width: 28px;
+  height: 28px;
+  display: inline-block; }
+
+.icon-fb_white {
+  background-image: url("../images/svg/icon-fb_white.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+  width: 28px;
+  height: 28px;
+  display: inline-block; }
+
+.icon-ig_white {
+  background-image: url("../images/svg/icon-ig_white.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+  width: 28px;
+  height: 28px;
+  display: inline-block; }
+
+.icon-yt_white {
+  background-image: url("../images/svg/icon-yt_white.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+  width: 28px;
+  height: 28px;
+  display: inline-block; }
+
+.icon-fb_blue {
+  background-image: url("../images/svg/icon-fb_blue.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+  width: 28px;
+  height: 28px;
+  display: inline-block; }
+
+.icon-ig_blue {
+  background-image: url("../images/svg/icon-ig_blue.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+  width: 28px;
+  height: 28px;
+  display: inline-block; }
+
+.icon-yt_blue {
+  background-image: url("../images/svg/icon-yt_blue.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+  width: 28px;
+  height: 28px;
+  display: inline-block; }
