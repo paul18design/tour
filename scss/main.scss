@@ -75,6 +75,41 @@ body {
   color: #878787;
 }
 
+.gray-color{
+  color: #575756;
+}
+
+
+.fs_90{
+  font-size: 90px !important;
+}
+
+.fs_80{
+  font-size: 80px !important;
+}
+
+.fs_70{
+  font-size: 70px !important;
+}
+.fs_60{
+  font-size: 60px !important;
+}
+.fs_55{
+  font-size: 55px !important;
+}
+.fs_50{
+  font-size: 50px !important;
+}
+.fs_45{
+  font-size: 45px !important;
+}
+.fs_40{
+  font-size: 40px !important;
+}
+.fs_35{
+  font-size: 35px !important;
+}
+
 .fs_30{
   font-size: 30px !important;
 }
@@ -114,6 +149,50 @@ body {
 }
 .upper {
   text-transform: uppercase;
+}
+
+.line-height_10 {
+  line-height: 10px;
+}
+
+.line-height_15 {
+  line-height: 15px;
+}
+
+.line-height_20 {
+  line-height: 20px;
+}
+
+.line-height_25 {
+  line-height: 25px;
+}
+
+.line-height_30 {
+  line-height: 30px;
+}
+.line-height_35 {
+ 
+  line-height: 35px;
+}
+
+.line-height_40 {
+  line-height: 40px;
+}
+
+.line-height_45 {
+  line-height: 45px;
+}
+
+.line-height_50 {
+  line-height: 50px;
+}
+
+.line-height_60 {
+  line-height: 60px;
+}
+
+.line-height_65 {
+  line-height: 65px;
 }
 
 //Nav bar settings
@@ -157,10 +236,12 @@ ul.footer-list {
   padding: 0 !important;
 }
 
-@media screen (min-width:768px){
-  .footer-col {
-    text-align: left;
-  }
+.description-bg{
+  background-image: url("../images/background-mountain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: block;
 }
 
 //Iconography
