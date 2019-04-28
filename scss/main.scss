@@ -404,6 +404,14 @@ ul.footer-list {
   display: block;
 }
 
+.we-bg {
+  background-image: url("../images/background-us.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: block;
+}
+
 .carousel-caption{
   position: absolute;
     right: 15%;
@@ -416,6 +424,20 @@ ul.footer-list {
     text-align: center;
 }
 
+.man-img {
+  background-image: url("../images/man.png");
+  width: 550px;
+  height: 622px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.about {
+  font-family:'aganlight';
+  font-size: 35px;
+}
 
 .france-img {
   background-image: url("../images/france.png");
@@ -440,6 +462,15 @@ ul.footer-list {
 
 .description-dest{
   width: 250px;
+}
+
+.line-red2 {
+  height: 4px;
+  background-color: red;
+  top: 265px;
+  left: -30px;
+  width: 370px;
+  margin-left: 0;
 }
 
 .line-red {
