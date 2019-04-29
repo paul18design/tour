@@ -53,9 +53,10 @@
 <div class="bg-contact">
     <div class="container pt-40 pb-40">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4" style="padding-left: 0px; padding-right: 0px">
                 <div class="row no-gutters">
-                    <div class="col-sm-12 bg-dark white-color p-40">
+                    <div class="col-sm-12 bg-dark white-color p-50 position-relative">
+                        <hr class="line-white position-absolute">
                         <ul class="contact-list">
                             <li class="pb-3">
                                 <span class="icon-phone"></span>
@@ -77,8 +78,41 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8 form-group">
-                
+            <div class="col-md-8 form-group bg-white p-30">
+                <div class="row position-relative">
+                    <div class="col-sm gray-color fs_40 agane-bold text-center">
+                        CONTACTO
+                    </div>
+                    <hr class="line-red3 position-absolute">
+                </div>
+                <div class="row pt-20">
+                    <div class="col-sm agane-regular gray-color">
+                        <label for="nombre">Nombre*</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="">
+                    </div>
+                    <div class="col-sm agane-regular gray-color">
+                        <label for="apellido">Apellido*</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="">
+                    </div>
+                </div>
+                <div class="row pt-30">
+                    <div class="col-sm agane-regular gray-color">
+                        <label for="correo">Email*</label>
+                        <input type="email" class="form-control" id="correo" placeholder="">
+                    </div>
+                </div>
+                <div class="row pt-30">
+                    <div class="col-sm agane-regular gray-color">
+                        <label for="mensaje">Mensaje*</label>
+                        <textarea name="" class="form-control" id="mensaje" cols="30" rows="6"></textarea>
+                        <small id="emailHelp" class="form-text text-muted agane-light">Los campos marcados con * son obligatorios.</small>
+                    </div>
+                </div>
+                <div class="row pt-30">
+                    <div class="col-sm text-center">
+                        <button type="submit" class="btn btn-tour agane-bold ">Enviar</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

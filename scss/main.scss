@@ -232,6 +232,17 @@ body {
 .p-65 {
   padding: 65px !important;
 }
+
+.px-200 {
+  padding: 0px 200px !important;
+}
+
+
+.py-100 {
+  padding: 100px 0px !important;
+}
+
+
 .pt-20 {
   padding-top: 20px !important;
 }
@@ -372,6 +383,10 @@ body {
   padding-top: 250px !important;
 }
 
+.dest-title {
+  padding: 450px 0px;
+}
+
 //Nav bar settings
 
 .header-list li:last-child {
@@ -445,6 +460,23 @@ ul.contact-list {
 
 .we-bg {
   background-image: url("../images/background-us.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: block;
+}
+
+.bg-destinos {
+  min-height: 1054px;
+  background-image: url("../images/bg-destinos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: block;
+}
+
+.bg-resume {
+  background-image: url("../images/bg-resume.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -538,6 +570,24 @@ ul.contact-list {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.arc-img {
+  background-image: url("../images/arc-img.png");
+  width: 600px;
+  height: 600px;
+  top: -60px;
+  right: -20px;
+  background-repeat: no-repeat;
+}
+
+.street-img {
+  background-image: url("../images/street-img.png");
+  width: 600px;
+  height: 600px;
+  top: -70px;
+  left: -60px;
+  background-repeat: no-repeat;
 }
 
 .lateral-text{
@@ -679,6 +729,59 @@ ul.contact-list {
   background-color: #c90d0d;
   width: 150px;
   margin-left: 0;
+}
+
+.line-red3 {
+  height: 4px;
+  background-color: #c90d0d;
+  top: 35px;
+  left: 46%;
+  width: 70px;
+  margin-left: 0;
+}
+
+.line-red4{
+  height: 4px;
+  background-color: #c90d0d;
+  top: 42px;
+  left: 46%;
+  width: 70px;
+  margin-left: 0;
+}
+
+.line-white {
+  height: 150px;
+  background-color: #FFFFFF;
+  width: 4px;
+  top: 22px;
+  left: 28px;
+}
+
+.btn-tour {
+  background-color: #c90d0d;
+  color: #FFFFFF;
+  width: 200px;
+  font-weight: 600;
+  border-radius: 0px !important;
+}
+
+.boton-big {
+  padding: 20px 40px;
+  border: solid 1.5px #575756;
+  vertical-align: middle;
+}
+
+.bullet-red ul i {
+  list-style: none;
+}
+
+.bullet-red ul i::before {
+  content: "\2022";
+  color: 575756;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 //Iconography
