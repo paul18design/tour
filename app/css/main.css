@@ -174,8 +174,20 @@ body {
 .p-45 {
   padding: 45px; }
 
+.p-50 {
+  padding: 50px; }
+
+.p-55 {
+  padding: 55px; }
+
+.p-60 {
+  padding: 60px; }
+
+.p-65 {
+  padding: 65px; }
+
 .pt-20 {
-  padding-top: 20px; }
+  padding-top: 20px !important; }
 
 .pt-25 {
   padding-top: 25px; }
@@ -300,6 +312,9 @@ body {
 .p-title {
   padding-top: 180px !important; }
 
+.p-title2 {
+  padding-top: 250px !important; }
+
 .header-list li:last-child {
   width: 110px; }
 
@@ -346,6 +361,17 @@ ul.footer-list {
   background-position: center center;
   display: block; }
 
+.blog-bg {
+  background-image: url("../images/blog-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: block; }
+
+.blog-des {
+  width: 300px !important;
+  line-height: 18px; }
+
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -379,6 +405,25 @@ ul.footer-list {
   background-repeat: no-repeat;
   background-position: center center; }
 
+.bike-img {
+  background-image: url("../images/bike2.png");
+  width: 550px;
+  height: 471px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.bg-2019 {
+  background-image: url("../images/bg-2019.jpg");
+  width: 600px;
+  height: 687px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 35px; }
+
 .lateral-text {
   transform: rotate(270deg);
   transform-origin: bottom left;
@@ -388,6 +433,92 @@ ul.footer-list {
   font-size: 38px;
   color: #ffffff;
   display: inline-block; }
+
+.services {
+  width: 200px;
+  display: inline-block;
+  line-height: 18px; }
+
+.hotel {
+  background-image: url("../images/hotel.png");
+  width: 200px;
+  height: 138px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.tour {
+  background-image: url("../images/tours.png");
+  width: 200px;
+  height: 138px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.transport {
+  background-image: url("../images/transport.png");
+  width: 200px;
+  height: 138px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.guide {
+  background-image: url("../images/guide.png");
+  width: 200px;
+  height: 138px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.trip {
+  background-image: url("../images/trip.png");
+  width: 200px;
+  height: 138px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.sit-bike {
+  background-image: url("../images/sit-bike.png");
+  width: 300px;
+  height: 300px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.paris {
+  background-image: url("../images/paris.png");
+  width: 300px;
+  height: 300px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.italy {
+  background-image: url("../images/italy.png");
+  width: 300px;
+  height: 300px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.giro {
+  background-image: url("../images/giro.png");
+  width: 300px;
+  height: 300px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 .description-dest {
   width: 250px; }
@@ -399,6 +530,13 @@ ul.footer-list {
   left: -30px;
   width: 370px;
   margin-left: 0; }
+
+.line-vertical {
+  height: 300px;
+  width: 5px;
+  background-color: #FFFFFF;
+  top: 140px;
+  left: 50px; }
 
 .line-red {
   height: 4px;
@@ -487,3 +625,12 @@ ul.footer-list {
   width: 28px;
   height: 28px;
   display: inline-block; }
+
+.down-arrow {
+  background-image: url("../images/down-arrow.png");
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%; }
