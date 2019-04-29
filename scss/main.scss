@@ -13,7 +13,6 @@
   url('../fonts/aganelight-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
 @font-face {
@@ -41,7 +40,11 @@ body {
 }
 
 .bg-dark {
-  background-color: #2e2e2e;
+  background-color: #575756;
+}
+
+.bg-gray {
+  background-color: #f6f6f6 !important;
 }
 
 .bg-white {
@@ -195,35 +198,39 @@ body {
   line-height: 65px;
 }
 
+.no-gutters {
+  padding: 0;
+}
+
 .p-20 {
-  padding: 20px;
+  padding: 20px !important;
 }
 .p-25 {
-  padding: 25px;
+  padding: 25px !important;
 }
 .p-30 {
-  padding: 30px;
+  padding: 30px !important;
 }
 .p-35 {
-  padding: 35px;
+  padding: 35px !important;
 }
 .p-40 {
-  padding: 40px;
+  padding: 40px !important;
 }
 .p-45 {
-  padding: 45px;
+  padding: 45px !important;
 }
 .p-50 {
-  padding: 50px;
+  padding: 50px !important;
 }
 .p-55 {
-  padding: 55px;
+  padding: 55px !important;
 }
 .p-60 {
-  padding: 60px;
+  padding: 60px !important;
 }
 .p-65 {
-  padding: 65px;
+  padding: 65px !important;
 }
 .pt-20 {
   padding-top: 20px !important;
@@ -270,7 +277,7 @@ body {
   padding-top: 85px;
 }
 .pb-20 {
-  padding-bottom: 20px;
+  padding-bottom: 20px !important;
 }
 .pb-25 {
   padding-bottom: 25px;
@@ -283,7 +290,7 @@ body {
   padding-bottom: 35px;
 }
 .pb-40 {
-  padding-bottom: 40px;
+  padding-bottom: 40px !important;
 }
 .pb-45 {
   padding-bottom: 45px;
@@ -314,7 +321,7 @@ body {
   padding-left: 35px;
 }
 .pl-40 {
-  padding-left: 40px;
+  padding-left: 40px !important;
 }
 .pl-45 {
   padding-left: 45px;
@@ -343,7 +350,7 @@ body {
   padding-right: 35px;
 }
 .pr-40 {
-  padding-right: 40px;
+  padding-right: 40px !important;
 }
 .pr-45 {
   padding-right: 45px;
@@ -410,6 +417,24 @@ ul.footer-list {
   padding: 0 !important;
 }
 
+.contact-list {
+  list-style: none;
+  color: #ffffff;
+}
+
+ul.contact-list li:first-child {
+  display: block;
+  vertical-align: middle;
+}
+
+ul.contact-list li span {
+  vertical-align: middle;
+}
+
+ul.contact-list {
+  padding: 0 !important;
+}
+
 .description-bg{
   background-image: url("../images/background-mountain.jpg");
   background-repeat: no-repeat;
@@ -432,6 +457,14 @@ ul.footer-list {
   background-size: cover;
   background-position: center center;
   display: block; 
+}
+
+.bg-contact {
+  background-image: url("../images/bg-contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: block;
 }
 
 .blog-des{
@@ -495,6 +528,16 @@ ul.footer-list {
   background-repeat: no-repeat;
   background-position: center center;
   margin-top: 35px;
+}
+
+.next-img {
+  background-image: url("../images/next-tour.jpg");
+  width: 560px;
+  height: 560px ;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .lateral-text{
@@ -608,7 +651,7 @@ ul.footer-list {
 
 .line-red2 {
   height: 4px;
-  background-color: red;
+  background-color: #c90d0d;
   top: 265px;
   left: -30px;
   width: 370px;
@@ -623,9 +666,17 @@ ul.footer-list {
   left: 50px;
 }
 
+.line-vertical2 {
+  height: 50px;
+  width: 5px;
+  background-color: #c90d0d;
+  top: -15px;
+  left: 50%;
+}
+
 .line-red {
   height: 4px;
-  background-color: red;
+  background-color: #c90d0d;
   width: 150px;
   margin-left: 0;
 }
