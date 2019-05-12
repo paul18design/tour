@@ -5316,7 +5316,7 @@ button.bg-dark:focus {
 .position-relative {
   position: relative !important; }
 
-.position-absolute {
+.position-absolute, .lateral-text {
   position: absolute !important; }
 
 .position-fixed {
@@ -7080,7 +7080,7 @@ body {
   color: #878787; }
 
 .gray-color {
-  color: #575756; }
+  color: #575756 !important; }
 
 .fs_90 {
   font-size: 90px !important; }
@@ -7523,13 +7523,14 @@ ul.contact-list {
   background-repeat: no-repeat; }
 
 .lateral-text {
+  width: 500px !important;
   transform: rotate(270deg);
   transform-origin: bottom left;
   margin-left: 0;
   padding-top: 25rem;
-  font-family: 'aganextra_bold';
+  font-family: 'aganextra_bold' !important;
   font-size: 38px;
-  color: #ffffff;
+  color: #ffffff !important;
   display: inline-block; }
 
 .services {
@@ -7644,10 +7645,10 @@ ul.contact-list {
   left: 50%; }
 
 .line-red {
-  height: 4px;
-  background-color: #c90d0d;
-  width: 150px;
-  margin-left: 0; }
+  height: 4px !important;
+  background-color: #c90d0d !important;
+  width: 150px !important;
+  margin-left: 0 !important; }
 
 .line-red3 {
   height: 4px;

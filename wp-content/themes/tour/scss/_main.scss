@@ -79,7 +79,7 @@ body {
 }
 
 .gray-color{
-  color: #575756;
+  color: #575756 !important;
 }
 
 
@@ -591,13 +591,15 @@ ul.contact-list {
 }
 
 .lateral-text{
+  @extend .position-absolute;
+  width: 500px !important;
   transform: rotate(270deg);
   transform-origin: bottom left;
   margin-left: 0;
   padding-top: 25rem;
-  font-family: 'aganextra_bold';
+  font-family: 'aganextra_bold' !important;
   font-size: 38px;
-  color: #ffffff;
+  color: #ffffff !important;
   display: inline-block;
 }
 
@@ -725,10 +727,10 @@ ul.contact-list {
 }
 
 .line-red {
-  height: 4px;
-  background-color: #c90d0d;
-  width: 150px;
-  margin-left: 0;
+  height: 4px !important;
+  background-color: #c90d0d !important;
+  width: 150px !important;
+  margin-left: 0 !important;
 }
 
 .line-red3 {
