@@ -702,12 +702,12 @@ ul.contact-list {
 }
 
 .line-red2 {
-  height: 4px;
-  background-color: #c90d0d;
-  top: 265px;
-  left: -30px;
-  width: 370px;
-  margin-left: 0;
+  height: 4px !important;
+  background-color: #c90d0d !important;
+  top: 300px !important;
+  left: -30px !important;
+  width: 370px !important;
+  margin-left: 0 !important;
 }
 
 .line-vertical{
@@ -734,12 +734,11 @@ ul.contact-list {
 }
 
 .line-red3 {
-  height: 4px;
-  background-color: #c90d0d;
-  top: 35px;
-  left: 46%;
-  width: 70px;
-  margin-left: 0;
+  height: 4px !important;
+  background-color: #c90d0d !important;
+  left: 46% !important;
+  width: 70px !important;
+  margin: 0 auto !important;
 }
 
 .line-red4{
