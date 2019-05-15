@@ -26,7 +26,8 @@ if (function_exists('add_theme_support')) {
     add_action('after_setup_theme', 'tour_custom_logo_setup');
 
     register_nav_menus(array(
-        'primary' => __('Primary Menu', 'ecosistemas'),
+        'left' => __('Left Menu', 'tour'),
+        'right' => __('Right Menu', 'tour'),
     ));
 }
 

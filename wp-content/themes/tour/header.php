@@ -26,61 +26,36 @@ if (!defined('ABSPATH')) {
 </head>
 <body <?php body_class(); ?>>
 
-<header>
-    <nav class="navbar navbar-expand-md bg-white">
-<!--        <div class="d-flex w-50 order-0">-->
-<!--            <a class="navbar-brand mr-1" href="#"></a>-->
-<!--            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">-->
-<!--                <span class="navbar-toggler-icon"></span>-->
-<!--            </button>-->
-<!--        </div>-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar"
-                aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="<?php esc_attr_e('Toggle navigation', 'ecosistemas'); ?>">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- The WordPress Menu goes here -->
-        <?php wp_nav_menu(
-            array(
-                'theme_location' => 'primary',
-                'container_class' => 'collapse navbar-collapse justify-content-center order-2',
-                'container_id' => 'collapsingNavbar',
-                'menu_class' => 'navbar-nav align-middle nav-site header-list',
-                'fallback_cb' => '',
-                'menu_id' => 'main-menu',
-                'depth' => 2,
-                'walker' => new Harcorp_WP_Bootstrap_Navwalker(),
-            )
-        ); ?>
-<!--        <div class="navbar-collapse collapse justify-content-center order-2 " id="collapsingNavbar">-->
-<!--            <ul class="navbar-nav  align-middle nav-site header-list">-->
-<!--                <li class="nav-item active">-->
-<!--                    <a class="nav-link dark-color upper agane-regular align-middle fs_20  active-nav" href="index.html">inicio</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link dark-color upper agane-regular fs_20" href="nosotros.html">nosotros</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link dark-color upper agane-regular fs_20" href="destinos.html">destinos</a>-->
-<!--                </li>-->
-<!--                <li class="">-->
-<!--                    <a class="nav-link dark-color upper agane-regular fs_20 d-none d-sm-block d-md-block" href="index.html">-->
-<!--                        <span class="logo-tour"></span>-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link dark-color upper agane-regular fs_20" href="blog.html">blog</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link dark-color upper agane-regular fs_20" href="contacto.html">contacto</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a href="#" target="_blank"><span class="icon-fb_blue"></span></a>-->
-<!--                    <a href="#" target="_blank" class="pl-1 pr-1"><span class="icon-ig_blue"></span></a>-->
-<!--                    <a href="#" target="_blank"><span class="icon-yt_blue"></span></a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-        <span class="navbar-text small text-truncate mt-1 w-50 text-right order-1 order-md-last"></span>
-    </nav>
-</header>
+<nav class="navbar navbar-expand-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- The WordPress Menu goes here -->
+    <?php wp_nav_menu([
+        'theme_location' => 'left',
+        'container_class' => 'collapse navbar-collapse',
+        'container_id' => 'nav-left',
+        'menu_class' => 'nav navbar-nav ml-auto',
+        'fallback_cb' => '',
+        'depth' => 2,
+        'menu_id' => 'left-menu',
+        'walker' => new Harcorp_WP_Bootstrap_Navwalker()
+    ]); ?>
+    <?php
+    $custom_logo_id = get_theme_mod('custom_logo');
+    $image = wp_get_attachment_image($custom_logo_id, 'full');
+    ?>
+    <a class="navbar-brand mx-auto" href="#"><?= $image ?></a>
+    <?php wp_nav_menu([
+        'theme_location' => 'right',
+        'container_class' => 'collapse navbar-collapse',
+        'container_id' => 'nav-right',
+        'menu_class' => 'nav navbar-nav mr-auto',
+        'fallback_cb' => '',
+        'depth' => 2,
+        'menu_id' => 'right-menu',
+        'walker' => new Harcorp_WP_Bootstrap_Navwalker()
+    ]); ?>
+</nav>
