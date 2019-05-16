@@ -1,6 +1,46 @@
-# Jetbrains project configuration files
+.idea
+wp-config-local.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+sitemap.xml
+*.log
 
-node_modules/*
-.idea/*
-idea/*
-package-lock.json
+wp-content/cache/
+wp-content/backups/
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+.sass-cache
+
+migrate/*
